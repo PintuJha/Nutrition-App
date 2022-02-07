@@ -1,0 +1,1888 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Nutrition App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/plugins/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- ========== Top Header Code Start ========== -->
+    <header id="page-topbar">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="">
+                          
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+            </div>
+            <div class="d-flex">
+
+                <div class="dropdown d-inline-block  ms-2">
+                    <button type="button" class="btn header-item" id="page-header-search-dropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="search" class="icon-lg"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..."
+                                        aria-label="Search Result">
+                                    <button class="btn btn-primary" type="submit"><i
+                                            class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon position-relative"
+                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i data-feather="bell" class="icon-lg"></i>
+                        <span class="badge bg-danger rounded-pill">3</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0"> Notifications </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-simplebar style="max-height: 230px;">
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours
+                                                    ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>2 hours
+                                                    ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>2 hours
+                                                    ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-2 border-top d-grid">
+                            <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon position-relative me-2"
+                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fas fa-comment-alt"></i>
+                        <span class="badge bg-danger rounded-pill">2</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0"> Message </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-simplebar style="max-height: 230px;">
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">6:45am</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">6:45am</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-2 border-top d-grid">
+                            <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item bg-soft-light border-start"
+                        id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="d-none d-xl-inline-block ms-1 fw-medium">Shweta Reddy</span>
+                        <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        <img class="rounded-circle header-profile-user" src="assets/images/profile.jpg"
+                            alt="Header Avatar">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="javascript:void(0);"><i
+                                class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== Top Header Code End ========== -->
+
+ <!-- ========== Sidebar Code Start ========== -->
+<div class="vertical-menu">
+    <div data-simplebar class="h-100">
+        <div id="sidebar-menu">
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li>
+                    <a href="index.html"  class="tooltip">
+                        <i data-feather="home"></i>
+                        <span class="tooltiptext">Home</span>
+                    </a>
+                </li>
+                <li class="mm-active">
+                    <a href="recipes-database.html" class="tooltip active">
+                        <i data-feather="users"></i>
+                        <span class="tooltiptext">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="calendar"></i>
+                        <span class="tooltiptext">Calender</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="trello"></i>
+                        <span class="tooltiptext">Trello</span>
+                    </a>
+                </li>
+                <hr>
+                <li class="menu-title">Settings</li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="settings"></i>
+                        <span class="tooltiptext">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="bell"></i>
+                        <span class="tooltiptext">Bell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ========== Sidebar Code End ========== -->
+
+
+
+
+<!-- ==========SECTION CODE START============ -->
+<div class="main-content">
+
+    <div class="page-content">
+        <div class="container-fluid">
+
+            <div class="breadcrumb_header">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Meal Planner</a></li>
+                    <li class="breadcrumb-item"><a href="javascript:void(0);">Create Meal Plan</a></li>
+                </ul>
+                <div class="share_print">
+                    <div class="pagni-step3-share">
+                        <ul>
+                            <li><a href="javascript:void(0);"><i class="fas fa-print"></i></a>
+                            </li>
+                            <li><a href="javascript:void(0);"><i class="fas fa-share-alt"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="create_meal_section">
+                <div class="row">
+                   
+                    <div class="col-md-7">
+                        <div class="recommended_box">
+                            <div class="day_header">
+                                <ul>
+                                    <li>
+                                        <h3>Tuesday</h3>
+                                    </li>
+                                    <li>
+                                        <p><b>21, November</b></p>
+                                    </li>
+                                    <li class="week_day">
+                                        <p><i class="fas fa-chevron-left"></i> Week 1, Day 1 <i class="fas fa-chevron-right"></i></p>
+                                    </li>
+                                    <li>
+                                        <input type="date" class="date">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="recommended_btn text-center">
+                                <button class="btn_remo">Recommended</button>
+                            </div>
+                    
+                            <div class="recommended_card_box">
+                    
+                                <div class="recommended_card_all mb-4">
+                                    <div class="card">
+                                        <div class="card-header align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Breakfast <span>400 calories</span></h4>
+                                            <div class="flex-shrink-0 breakfast_calen ">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                        <div class="repeat_meal">
+                                                            <p>Repeat this on:</p>
+                                                            <div class="rep_select">
+                                                                <div class="meal">
+                                                                    <label>Week</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Monday</option>
+                                                                        <option>Tuesday</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="meal">
+                                                                    <label>Meal</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rep_set_btn">
+                                                                <div class="rep_add_icon">
+                                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                </div>
+                                                                <div class="set_btn">
+                                                                    <button class="btn_set">Set</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 dot_icon_menu">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu" style="">
+                                                        <a class="dropdown-item" href="#">Add tags</a>
+                                                        <a class="dropdown-item" href="#">Sent this meal</a>
+                                                        <a class="dropdown-item" href="#">Clear all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="recommended_card_body">
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 1</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 2</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 3</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="recommended_card_all mb-4">
+                                    <div class="card">
+                                        <div class="card-header align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Lunch <span>450 calories</span></h4>
+                                            <div class="flex-shrink-0 breakfast_calen ">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                        <div class="repeat_meal">
+                                                            <p>Repeat this on:</p>
+                                                            <div class="rep_select">
+                                                                <div class="meal">
+                                                                    <label>Week</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Monday</option>
+                                                                        <option>Tuesday</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="meal">
+                                                                    <label>Meal</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rep_set_btn">
+                                                                <div class="rep_add_icon">
+                                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                </div>
+                                                                <div class="set_btn">
+                                                                    <button class="btn_set">Set</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 dot_icon_menu">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu" style="">
+                                                        <a class="dropdown-item" href="#">Add tags</a>
+                                                        <a class="dropdown-item" href="#">Sent this meal</a>
+                                                        <a class="dropdown-item" href="#">Clear all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="recommended_card_body">
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 1</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 2</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 3</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="recommended_card_all mb-4">
+                                    <div class="card">
+                                        <div class="card-header align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Snacks <span>0/400 calories</span></h4>
+                                            <div class="flex-shrink-0 breakfast_calen ">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                        <div class="repeat_meal">
+                                                            <p>Repeat this on:</p>
+                                                            <div class="rep_select">
+                                                                <div class="meal">
+                                                                    <label>Week</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Monday</option>
+                                                                        <option>Tuesday</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="meal">
+                                                                    <label>Meal</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rep_set_btn">
+                                                                <div class="rep_add_icon">
+                                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                </div>
+                                                                <div class="set_btn">
+                                                                    <button class="btn_set">Set</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 dot_icon_menu">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu" style="">
+                                                        <a class="dropdown-item" href="#">Add tags</a>
+                                                        <a class="dropdown-item" href="#">Sent this meal</a>
+                                                        <a class="dropdown-item" href="#">Clear all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="recommended_card_body">
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 1</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 2</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 3</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="recommended_card_all mb-4">
+                                    <div class="card">
+                                        <div class="card-header align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Dinner <span>0/400 calories</span></h4>
+                                            <div class="flex-shrink-0 breakfast_calen ">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                        <div class="repeat_meal">
+                                                            <p>Repeat this on:</p>
+                                                            <div class="rep_select">
+                                                                <div class="meal">
+                                                                    <label>Week</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Monday</option>
+                                                                        <option>Tuesday</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="meal">
+                                                                    <label>Meal</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rep_set_btn">
+                                                                <div class="rep_add_icon">
+                                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                </div>
+                                                                <div class="set_btn">
+                                                                    <button class="btn_set">Set</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 dot_icon_menu">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu" style="">
+                                                        <a class="dropdown-item" href="#">Add tags</a>
+                                                        <a class="dropdown-item" href="#">Sent this meal</a>
+                                                        <a class="dropdown-item" href="#">Clear all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="recommended_card_body">
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 1</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 2</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 3</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="recommended_card_all mb-4">
+                                    <div class="card">
+                                        <div class="card-header align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Pre-workout <span>0/400 calories</span></h4>
+                                            <div class="flex-shrink-0 breakfast_calen ">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                        <div class="repeat_meal">
+                                                            <p>Repeat this on:</p>
+                                                            <div class="rep_select">
+                                                                <div class="meal">
+                                                                    <label>Week</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Monday</option>
+                                                                        <option>Tuesday</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="meal">
+                                                                    <label>Meal</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rep_set_btn">
+                                                                <div class="rep_add_icon">
+                                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                </div>
+                                                                <div class="set_btn">
+                                                                    <button class="btn_set">Set</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 dot_icon_menu">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu" style="">
+                                                        <a class="dropdown-item" href="#">Add tags</a>
+                                                        <a class="dropdown-item" href="#">Sent this meal</a>
+                                                        <a class="dropdown-item" href="#">Clear all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="recommended_card_body">
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 1</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 2</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 3</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="recommended_card_all mb-4">
+                                    <div class="card">
+                                        <div class="card-header align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Post-workout <span>0/400 calories</span></h4>
+                                            <div class="flex-shrink-0 breakfast_calen ">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="far fa-calendar-alt"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                        <div class="repeat_meal">
+                                                            <p>Repeat this on:</p>
+                                                            <div class="rep_select">
+                                                                <div class="meal">
+                                                                    <label>Week</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Monday</option>
+                                                                        <option>Tuesday</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="meal">
+                                                                    <label>Meal</label>
+                                                                    <select>
+                                                                        <option>Select</option>
+                                                                        <option>Breakfast</option>
+                                                                        <option>Lunch</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="rep_set_btn">
+                                                                <div class="rep_add_icon">
+                                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                </div>
+                                                                <div class="set_btn">
+                                                                    <button class="btn_set">Set</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex-shrink-0 dot_icon_menu">
+                                                <div class="dropdown align-self-start">
+                                                    <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                        <i class="bx bx-dots-horizontal-rounded"></i>
+                                                    </a>
+                                                    <div class="dropdown-menu down_menu" style="">
+                                                        <a class="dropdown-item" href="#">Add tags</a>
+                                                        <a class="dropdown-item" href="#">Sent this meal</a>
+                                                        <a class="dropdown-item" href="#">Clear all</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="recommended_card_body">
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 1</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 2</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <div class="recom_option_card mb-3">
+                                                <div class="option">
+                                                    <p>Option 3</p>
+                                                </div>
+                                                <div class="add_icon">
+                                                    <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                </div>
+                                                <div class="reff_cal_delet">
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Replace"><i class="fas fa-sync-alt"></i></a>
+                                                    </div>
+                                                    <div class="ref dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false"><i class="far fa-calendar"></i></a>
+                    
+                                                        <div class="dropdown-menu down_menu repeat_meal_down" style="">
+                                                            <div class="repeat_meal">
+                                                                <p>Repeat this on:</p>
+                                                                <div class="rep_select">
+                                                                    <div class="meal">
+                                                                        <label>Week</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Monday</option>
+                                                                            <option>Tuesday</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="meal">
+                                                                        <label>Meal</label>
+                                                                        <select>
+                                                                            <option>Select</option>
+                                                                            <option>Breakfast</option>
+                                                                            <option>Lunch</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="rep_set_btn">
+                                                                    <div class="rep_add_icon">
+                                                                        <a href="javascript:void(0);"><i class="far fa-plus-square"></i></a>
+                                                                    </div>
+                                                                    <div class="set_btn">
+                                                                        <button class="btn_set">Set</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                    
+                                                    </div>
+                                                    <div class="ref">
+                                                        <a href="javascript:void(0);" data-toggle="tooltip" data-placement="top"
+                                                            title="Delete"><i class="far fa-trash-alt"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-5">
+                        <div class="macronutrients_distribution_meal_graph">
+                            <div class="macronutrients_distribution_meal_heading">
+                              <h3>Macronutrients distribution</h3>
+                            </div>
+
+                            <div class="graph_data">
+                                <div class="data_edit">
+                                    <a href="javascript:void(0);"><i class="fas fa-pen"></i></a>
+                                </div>
+                                <div id="chart_new">
+                                </div>
+                                <div class="daily_cal_sec_mar">
+                                    <p>Daily caloreis</p>
+                                    <h3>1670</h3>
+                                    <p>Kcal/day</p>
+                                </div>
+                            </div>
+
+                            <div class="macronutrients_distribution_meal_graph_data table_progress_bar">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                      <tr>
+                                        <td>Carbohydrates</td>
+                                        <td>
+                                            <div class="graph_progress">
+                                                <div class="progress">
+                                                    <div class="progress-bar color-1" style="width:100%"></div>
+                                                </div>
+                                                <p><b>85.5</b> <span>gms</span></p>
+                                            </div>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>Proteins</td>
+                                        <td>
+                                            <div class="graph_progress">
+                                                <div class="progress">
+                                                    <div class="progress-bar color-2" style="width:100%"></div>
+                                                </div>
+                                                <p><b>85.5</b> <span>gms</span></p>
+                                            </div>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>MUFA</td>
+                                        <td>
+                                            <div class="graph_progress">
+                                                <div class="progress">
+                                                    <div class="progress-bar color-3" style="width:100%"></div>
+                                                </div>
+                                                <p><b>85.5</b> <span>gms</span></p>
+                                            </div>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>PUFA</td>
+                                        <td>
+                                            <div class="graph_progress">
+                                                <div class="progress">
+                                                    <div class="progress-bar color-4" style="width:100%"></div>
+                                                </div>
+                                                <p><b>85.5</b> <span>gms</span></p>
+                                            </div>
+                                        </td>
+                                      </tr>
+
+                                      <tr>
+                                        <td>Satiurated fats</td>
+                                        <td>
+                                            <div class="graph_progress">
+                                                <div class="progress">
+                                                    <div class="progress-bar color-5" style="width:100%"></div>
+                                                </div>
+                                                <p><b>85.5</b> <span>gms</span></p>
+                                            </div>
+                                        </td>
+                                      </tr>
+
+                                    </tbody>
+                                  </table>
+
+                                  <div class="view_nat_btn">
+                                      <button class="full_nutr_info">View full Nutritional info</button>
+                                  </div>
+                            </div>
+
+                           
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+
+           
+        </div>
+    </div>
+</div>
+
+
+<!-- ==========SECTION CODE END============ -->
+
+
+
+
+
+
+
+ <footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <script>document.write(new Date().getFullYear())</script> © Nutrition App
+            </div>
+            <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                    Design & Develop by <a href="https://ascratech.com/" target="_blank"
+                        class="text-decoration-underline">Ascra Technologies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/metisMenu.min.js"></script>
+  <script src="assets/js/simplebar.min.js"></script>
+  <script src="assets/js/waves.min.js"></script>
+  <script src="assets/js/feather.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <script src="assets/js/range-slider.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+
+  <script>
+      // =============NEW PIE CHART CODE START==============
+
+    var options = {
+      series: [44, 55, 25, 17, 15],
+      colors: ['#ffd2b6', '#afffc1', '#cfb8ff', '#f87f9c','#fbde76'],
+      labels: ['Percent'],
+      chart: {
+      type: 'donut',
+    },
+    responsive: [{
+      breakpoint: 480,
+      options: {
+        chart: {
+          width: 200
+        },
+        
+      
+        legend: {
+          position: 'bottom'
+        }
+      }
+    }]
+        };
+
+
+   
+
+    var chart = new ApexCharts(document.querySelector("#chart_new"), options);
+    chart.render();
+
+    // =============NEW PIE CHART CODE END==============
+  </script>
+
+</body>
+</html>

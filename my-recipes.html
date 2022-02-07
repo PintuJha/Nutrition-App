@@ -1,0 +1,783 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Nutrition App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/plugins/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/plugins/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <!-- ========== Top Header Code Start ========== -->
+    <header id="page-topbar">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="">
+                          
+                        </span>
+                    </a>
+
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo.png" alt="">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo.png" alt="">
+                        </span>
+                    </a>
+                </div>
+                <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+            </div>
+            <div class="d-flex">
+
+                <div class="dropdown d-inline-block  ms-2">
+                    <button type="button" class="btn header-item" id="page-header-search-dropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="search" class="icon-lg"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                            <div class="form-group m-0">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..."
+                                        aria-label="Search Result">
+                                    <button class="btn btn-primary" type="submit"><i
+                                            class="mdi mdi-magnify"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon position-relative"
+                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i data-feather="bell" class="icon-lg"></i>
+                        <span class="badge bg-danger rounded-pill">3</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0"> Notifications </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-simplebar style="max-height: 230px;">
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hours
+                                                    ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>2 hours
+                                                    ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>2 hours
+                                                    ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-2 border-top d-grid">
+                            <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon position-relative me-2"
+                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fas fa-comment-alt"></i>
+                        <span class="badge bg-danger rounded-pill">2</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0"> Message </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-simplebar style="max-height: 230px;">
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">6:45am</p>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
+                                            alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Lorem ipsum</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p class="mb-0">6:45am</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-2 border-top d-grid">
+                            <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item bg-soft-light border-start"
+                        id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <span class="d-none d-xl-inline-block ms-1 fw-medium">Shweta Reddy</span>
+                        <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        <img class="rounded-circle header-profile-user" src="assets/images/profile.jpg"
+                            alt="Header Avatar">
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="javascript:void(0);"><i
+                                class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== Top Header Code End ========== -->
+
+    <!-- ========== Sidebar Code Start ========== -->
+<div class="vertical-menu">
+    <div data-simplebar class="h-100">
+        <div id="sidebar-menu">
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li>
+                    <a href="index.html"  class="tooltip">
+                        <i data-feather="home"></i>
+                        <span class="tooltiptext">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="recipes-database.html" class="tooltip">
+                        <i data-feather="users"></i>
+                        <span class="tooltiptext">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="calendar"></i>
+                        <span class="tooltiptext">Calender</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="trello"></i>
+                        <span class="tooltiptext">Trello</span>
+                    </a>
+                </li>
+                <hr>
+                <li class="menu-title">Settings</li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="settings"></i>
+                        <span class="tooltiptext">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tooltip">
+                        <i data-feather="bell"></i>
+                        <span class="tooltiptext">Bell</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- ========== Sidebar Code End ========== -->
+
+
+
+
+<!-- ==========SECTION CODE START============ -->
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card1 overview-section recipes-database">
+                        <div class="card-body p-0 mt-4">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="recipes-back">
+                                        <!-- <p><a href="javascript:void(0);">Back</a></p> -->
+                                        <div class="add-recipes">
+                                            <h4>My Recipes</h4>
+                                            <!-- <div class="button-recipes">
+                                                <button class="btn btn-dark">Add a Recipe</button>
+                                            </div> -->
+                                        </div>
+
+                                        <div class="search-box">
+                                            <div class="position-relative">
+                                                <input type="text" class="form-control border-0" placeholder="Search">
+                                                <i class="bx bx-search-alt search-icon"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="recipes-link">
+                                        <div class="nav flex-column nav-pills">
+                                            <a class="nav-link mb-2 " href="recipes-database.html">Recipes database <i class="fas fa-chevron-right"></i></a>
+                                            <a class="nav-link mb-2"  href="recommended.html">Recommended <i class="fas fa-chevron-right"></i></a>
+                                            <a class="nav-link mb-2"  href="favourites.html">Favourites <i class="fas fa-chevron-right"></i></a>
+                                            <a class="nav-link mb-2 active"  href="my-recipes.html">My recipes <i class="fas fa-chevron-right"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="favourites_filter">
+                                        <div class="filters-heading">
+                                            <h4><i class="fas fa-filter"></i> Filters</h4>
+                                        </div>
+
+                                        <div class="diet_type">
+                                            <div class="diet_type_heading">
+                                                <div class="card-body">
+                                                    <div class="d-flex gap-2 flex-wrap mb-3">
+                                                        <a class="" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true"
+                                                            aria-controls="collapseExample">
+                                                            Diet Type <i class="fas fa-chevron-down"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="collapse show" id="collapseExample">
+                                                        <div class="card border shadow-none card-body text-muted mb-0">
+                                                            <div class="diet_type_list">
+                                                                <ul class="unstyled centered">
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-1">Vegetarian</label>
+                                                                    </li>
+                                        
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-2">Non-Vegetarian</label>
+                                                                    </li>
+                                        
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-3">Ovo-lacto Vegetarian</label>
+                                                                    </li>
+                                        
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-4">Vegan</label>
+                                                                    </li>
+                                        
+                                                                </ul>
+                                        
+                                                                <div class="reset">
+                                                                    <p>reset <i class="fas fa-redo-alt"></i></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="diet_type">
+                                            <div class="diet_type_heading">
+                                                <div class="card-body">
+                                                    <div class="d-flex gap-2 flex-wrap mb-3">
+                                                        <a class="" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="true"
+                                                            aria-controls="collapseExample1">
+                                                            Meal <i class="fas fa-chevron-down"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="collapse show" id="collapseExample1">
+                                                        <div class="card border shadow-none card-body text-muted mb-0">
+                                                            <div class="diet_type_list">
+                                                                <ul class="unstyled centered">
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-5">Gluten free</label>
+                                                                    </li>
+                                        
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-6">Diabetic friendly</label>
+                                                                    </li>
+                                        
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-7">Loctose free</label>
+                                                                    </li>
+                                        
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-8">Jain food</label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-9">Pre-workout</label>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="value1">
+                                                                        <label for="styled-checkbox-10">Post-workout</label>
+                                                                    </li>
+                                        
+                                                                </ul>
+                                        
+                                                                <div class="reset">
+                                                                    <p>reset <i class="fas fa-redo-alt"></i></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="cooking_time">
+
+                                            <div class="cooking-heading">
+                                                <h4>Cooking time</h4>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div id="slider-range"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row slider-labels">
+                                                    <div class="col-md-6 caption">
+                                                        <div class="time_incre">
+                                                        <span class="data_border" id="slider-range-value1"></span> <span>mins</span>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-6  caption">
+                                                        <div class="time_incre">
+                                                            <span class="data_border" id="slider-range-value2"></span> <span>mins</span>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                              
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <form>
+                                                            <input type="hidden" name="min-value" value="">
+                                                            <input type="hidden" name="max-value" value="">
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                          
+                                            
+
+
+                                            <div class="cooking-heading ingrediants">
+                                                <h4>Number of Ingrediants</h4>
+
+                                                <div class="ingrediants_slider">
+                                                <range-slider min="0" max="100" step="1" dir="rtl" ></range-slider>
+                                               </div>
+
+                                            </div>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                </div>
+                            
+                            
+                            
+                                <div class="col-md-9">
+                                    <div class="recommended-content text-muted mt-4 mt-md-0">
+                                       
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-6 mb-4">
+                                                <div class="recommended-progress-section">
+                                                    <div class="recommended-progress-bar">
+                                                        <p>Carbs</p>
+                                                        <div class="progress-wrap progress" data-progress-percent="100">
+                                                            <div class="progress-bar progress"></div>
+                                                        </div>
+                                                        <span>85.5 gms</span>
+                                                    </div>
+                                                
+                                                    <div class="recommended-progress-bar">
+                                                        <p>PUFA</p>
+                                                        <div class="progress-wrap progress pro-2" data-progress-percent="100">
+                                                            <div class="progress-bar progress"></div>
+                                                        </div>
+                                                        <span>30.5 gms</span>
+                                                    </div>
+                                                
+                                                    <div class="recommended-progress-bar">
+                                                        <p>Saturated fats</p>
+                                                        <div class="progress-wrap progress pro-3" data-progress-percent="100">
+                                                            <div class="progress-bar progress"></div>
+                                                        </div>
+                                                        <span class="fats">30.5 gms</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-md-5 col-sm-6 mb-4">
+                                                <div class="recommended-progress-section">
+                                                    <div class="recommended-progress-bar">
+                                                        <p>Proteins</p>
+                                                        <div class="progress-wrap progress pro-4" data-progress-percent="100">
+                                                            <div class="progress-bar progress"></div>
+                                                        </div>
+                                                        <span>85.5 gms</span>
+                                                    </div>
+                                            
+                                                    <div class="recommended-progress-bar">
+                                                        <p>MUFA</p>
+                                                        <div class="progress-wrap progress pro-5" data-progress-percent="100">
+                                                            <div class="progress-bar progress"></div>
+                                                        </div>
+                                                        <span>30.5 gms</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2 col-sm-6 mb-4">
+                                                <div class="recommended-progress-btn">
+                                                    <button class="ptn-dar">Add</button>
+                                                    </div>
+                                                </div>
+                                        </div>
+
+                                       
+                                        <div class="row">
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-1.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fab-3.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 mb-3">
+                                                <div class="favourite-cart">
+                                                    <img src="assets/images/fav-2.png">
+                                                    <div class="fav-cart-heading">
+                                                        <div class="fav-heading">
+                                                            <h4>Oats idli and Sambar</h4>
+                                                            <p>360 Kcal</p>
+                                                        </div>
+                                                        <div class="fav-iocn">
+                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
+                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="far fa-heart"></i></a></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="add-plus-btn">
+                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-12">
+                                                <div class="favourites_pag">
+                                                    <ul class="pagination pagination-rounded mt-4 pb-1">
+                                                        <li class="page-item disabled">
+                                                            <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
+                                                        </li>
+                                                        <li class="page-item active">
+                                                            <a href="javascript: void(0);" class="page-link">1</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a href="javascript: void(0);" class="page-link">2</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a href="javascript: void(0);" class="page-link">3</a>
+                                                        </li>
+                                                        <li class="page-item">
+                                                            <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==========SECTION CODE END============ -->
+
+
+
+
+
+
+
+
+
+
+
+
+ <footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <script>document.write(new Date().getFullYear())</script> © Nutrition App
+            </div>
+            <div class="col-sm-6">
+                <div class="text-sm-end d-none d-sm-block">
+                    Design & Develop by <a href="https://ascratech.com/" target="_blank"
+                        class="text-decoration-underline">Ascra Technologies</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</div>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/metisMenu.min.js"></script>
+  <script src="assets/js/simplebar.min.js"></script>
+  <script src="assets/js/waves.min.js"></script>
+  <script src="assets/js/feather.min.js"></script>
+  <script src="assets/js/pace.min.js"></script>
+  <script src="assets/js/echarts.min.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
