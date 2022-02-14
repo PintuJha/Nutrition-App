@@ -89,14 +89,14 @@ am5.ready(function() {
 
     // ==========CALENDER CODE START==============
 
-    jQuery('#datepicker').datepicker({
-        changeMonth: true,
-      changeYear: true
-  }).on('focus', function(){
-      if(!jQuery('select').parent().hasClass('fake-select')){
-          jQuery('select').wrap('<span class="fake-select"></span>');
-      }
-  });
+  //   jQuery('#datepicker').datepicker({
+  //       changeMonth: true,
+  //     changeYear: true
+  // }).on('focus', function(){
+  //     if(!jQuery('select').parent().hasClass('fake-select')){
+  //         jQuery('select').wrap('<span class="fake-select"></span>');
+  //     }
+  // });
 
    // ==========CALENDER CODE END==============
   
@@ -107,6 +107,14 @@ am5.ready(function() {
   });
     // ===============ToolTips CODE END=================
 
+    function newDoc()
+    {
+    window.location.assign("create-meal-plan.html")
+    }
+
+
+    
+  
 
 
 

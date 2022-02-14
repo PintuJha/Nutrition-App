@@ -6,7 +6,6 @@
     <title>Nutrition App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/plugins/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -24,7 +23,7 @@
                         </span>
                         <span class="logo-lg">
                             <img src="assets/images/logo.png" alt="">
-                          
+
                         </span>
                     </a>
 
@@ -62,12 +61,13 @@
                         </form>
                     </div>
                 </div>
-                <div class="dropdown d-inline-block">
-                    <button type="button" class="btn header-item noti-icon position-relative"
+             
+                <div class="dropdown d-inline-block notification_box">
+                    <button type="button" class="btn header-item noti-icon position-relative me-2"
                         id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <i data-feather="bell" class="icon-lg"></i>
-                        <span class="badge bg-danger rounded-pill">3</span>
+                        <img class="notification " src="assets/images/notification_icon.png">
                     </button>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                         aria-labelledby="page-header-notifications-dropdown">
@@ -99,7 +99,7 @@
                             <a href="#!" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
-                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
                                             alt="user-pic">
                                     </div>
                                     <div class="flex-grow-1">
@@ -116,7 +116,7 @@
                             <a href="#!" class="text-reset notification-item">
                                 <div class="d-flex">
                                     <div class="flex-shrink-0 me-3">
-                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm"
+                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
                                             alt="user-pic">
                                     </div>
                                     <div class="flex-grow-1">
@@ -138,63 +138,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="dropdown d-inline-block">
-                    <button type="button" class="btn header-item noti-icon position-relative me-2"
-                        id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        <i class="fas fa-comment-alt"></i>
-                        <span class="badge bg-danger rounded-pill">2</span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                        aria-labelledby="page-header-notifications-dropdown">
-                        <div class="p-3">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <h6 class="m-0"> Message </h6>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-simplebar style="max-height: 230px;">
-                            <a href="#!" class="text-reset notification-item">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0 me-3">
-                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
-                                            alt="user-pic">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-1">Lorem ipsum</h6>
-                                        <div class="font-size-13 text-muted">
-                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-0">6:45am</p>
-                                </div>
-                            </a>
-                            <a href="#!" class="text-reset notification-item">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0 me-3">
-                                        <img src="assets/images/profile.jpg" class="rounded-circle avatar-sm"
-                                            alt="user-pic">
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <h6 class="mb-1">Lorem ipsum</h6>
-                                        <div class="font-size-13 text-muted">
-                                            <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p class="mb-0">6:45am</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="p-2 border-top d-grid">
-                            <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
-                                <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              
+            
                 <div class="dropdown d-inline-block">
                     <button type="button" class="btn header-item bg-soft-light border-start"
                         id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -214,518 +159,604 @@
     </header>
     <!-- ========== Top Header Code End ========== -->
 
- <!-- ========== Sidebar Code Start ========== -->
-<div class="vertical-menu">
-    <div data-simplebar class="h-100">
-        <div id="sidebar-menu">
-            <ul class="metismenu list-unstyled" id="side-menu">
-                <li>
-                    <a href="index.html"  class="tooltip">
-                        <i data-feather="home"></i>
-                        <span class="tooltiptext">Home</span>
-                    </a>
-                </li>
-                <li class="mm-active">
-                    <a href="recipes-database.html" class="tooltip active">
-                        <i data-feather="users"></i>
-                        <span class="tooltiptext">Profile</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="tooltip">
-                        <i data-feather="calendar"></i>
-                        <span class="tooltiptext">Calender</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="tooltip">
-                        <i data-feather="trello"></i>
-                        <span class="tooltiptext">Trello</span>
-                    </a>
-                </li>
-                <hr>
-                <li class="menu-title">Settings</li>
-                <li>
-                    <a href="javascript:void(0);" class="tooltip">
-                        <i data-feather="settings"></i>
-                        <span class="tooltiptext">Setting</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="tooltip">
-                        <i data-feather="bell"></i>
-                        <span class="tooltiptext">Bell</span>
-                    </a>
-                </li>
-            </ul>
+    <!-- ========== Sidebar Code Start ========== -->
+    <div class="vertical-menu">
+        <div data-simplebar class="h-100">
+            <div id="sidebar-menu">
+                <ul class="metismenu list-unstyled" id="side-menu">
+                    <li>
+                        <a href="index.html" class="tooltip">
+                            <i data-feather="home"></i>
+                            <span class="tooltiptext">Home</span>
+                        </a>
+                    </li>
+                    <li class="mm-active">
+                        <a href="recipes-database.html" class="tooltip active">
+                            <i data-feather="users"></i>
+                            <span class="tooltiptext">Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="tooltip">
+                            <i data-feather="calendar"></i>
+                            <span class="tooltiptext">Calender</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="tooltip">
+                            <i data-feather="trello"></i>
+                            <span class="tooltiptext">Trello</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="menu-title">Settings</li>
+                    <li>
+                        <a href="javascript:void(0);" class="tooltip">
+                            <i data-feather="settings"></i>
+                            <span class="tooltiptext">Setting</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="tooltip">
+                            <i data-feather="bell"></i>
+                            <span class="tooltiptext">Bell</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<!-- ========== Sidebar Code End ========== -->
+    <!-- ========== Sidebar Code End ========== -->
 
 
 
 
 
-<!-- ==========SECTION CODE START============ -->
-<div class="main-content">
-    <div class="page-content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="card1 overview-section recipes-database">
-                        <div class="card-body p-0 mt-4">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <div class="recipes-back">
-                                        <p><a href="javascript:void(0);">Back</a></p>
-                                        <div class="add-recipes">
-                                            <h4>Favourites</h4>
-                                            <!-- <div class="button-recipes">
+    <!-- ==========SECTION CODE START============ -->
+    <div class="main-content">
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card1 overview-section recipes-database">
+                            <div class="card-body p-0 mt-4">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="recipes-back">
+                                            <p><a href="javascript:void(0);">Back</a></p>
+                                            <div class="add-recipes">
+                                                <h4>Favourites</h4>
+                                                <!-- <div class="button-recipes">
                                                 <button class="btn btn-dark">Add a Recipe</button>
                                             </div> -->
+                                            </div>
+
+                                            <div class="search-box">
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control border-0"
+                                                        placeholder="Search">
+                                                    <i class="bx bx-search-alt search-icon"></i>
+                                                </div>
+                                            </div>
+
                                         </div>
 
-                                        <div class="search-box">
-                                            <div class="position-relative">
-                                                <input type="text" class="form-control border-0" placeholder="Search">
-                                                <i class="bx bx-search-alt search-icon"></i>
+                                        <div class="recipes-link">
+                                            <div class="nav flex-column nav-pills">
+                                                <a class="nav-link mb-2 " href="recipes-database.html">Recipes database
+                                                    <i class="fas fa-chevron-right"></i></a>
+                                                <a class="nav-link mb-2" href="recommended.html">Recommended <i
+                                                        class="fas fa-chevron-right"></i></a>
+                                                <a class="nav-link mb-2 active" href="favourites.html">Favourites <i
+                                                        class="fas fa-chevron-right"></i></a>
+                                                <a class="nav-link mb-2" href="my-recipes.html">My recipes <i
+                                                        class="fas fa-chevron-right"></i></a>
                                             </div>
                                         </div>
 
-                                    </div>
+                                        <div class="favourites_filter">
+                                            <div class="filters-heading">
+                                                <h4><i class="fas fa-filter"></i> Filters</h4>
+                                            </div>
 
-                                    <div class="recipes-link">
-                                        <div class="nav flex-column nav-pills">
-                                            <a class="nav-link mb-2 " href="recipes-database.html">Recipes database <i class="fas fa-chevron-right"></i></a>
-                                            <a class="nav-link mb-2"  href="recommended.html">Recommended <i class="fas fa-chevron-right"></i></a>
-                                            <a class="nav-link mb-2 active"  href="favourites.html">Favourites <i class="fas fa-chevron-right"></i></a>
-                                            <a class="nav-link mb-2"  href="my-recipes.html">My recipes <i class="fas fa-chevron-right"></i></a>
-                                        </div>
-                                    </div>
+                                            <div class="diet_type">
+                                                <div class="diet_type_heading">
+                                                    <div class="card-body">
+                                                        <div class="d-flex gap-2 flex-wrap mb-3">
+                                                            <a class="" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseExample" aria-expanded="true"
+                                                                aria-controls="collapseExample">
+                                                                Diet Type <i class="fas fa-chevron-down"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="collapse show" id="collapseExample">
+                                                            <div
+                                                                class="card border shadow-none card-body text-muted mb-0">
+                                                                <div class="diet_type_list">
+                                                                    <ul class="unstyled centered">
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-1" type="checkbox"
+                                                                                value="Vegetarian">
+                                                                            <label
+                                                                                for="styled-checkbox-1">Vegetarian</label>
+                                                                        </li>
 
-                                    <div class="favourites_filter">
-                                        <div class="filters-heading">
-                                            <h4><i class="fas fa-filter"></i> Filters</h4>
-                                        </div>
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-2" type="checkbox"
+                                                                                value="Non-Vegetarian">
+                                                                            <label
+                                                                                for="styled-checkbox-2">Non-Vegetarian</label>
+                                                                        </li>
 
-                                        <div class="diet_type">
-                                            <div class="diet_type_heading">
-                                                <div class="card-body">
-                                                    <div class="d-flex gap-2 flex-wrap mb-3">
-                                                        <a class="" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true"
-                                                            aria-controls="collapseExample">
-                                                            Diet Type <i class="fas fa-chevron-down"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="collapse show" id="collapseExample">
-                                                        <div class="card border shadow-none card-body text-muted mb-0">
-                                                            <div class="diet_type_list">
-                                                                <ul class="unstyled centered">
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="Vegetarian">
-                                                                        <label for="styled-checkbox-1">Vegetarian</label>
-                                                                    </li>
-                                        
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="Non-Vegetarian">
-                                                                        <label for="styled-checkbox-2">Non-Vegetarian</label>
-                                                                    </li>
-                                        
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="Ovo-lacto Vegetarian">
-                                                                        <label for="styled-checkbox-3">Ovo-lacto Vegetarian</label>
-                                                                    </li>
-                                        
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="Vegan">
-                                                                        <label for="styled-checkbox-4">Vegan</label>
-                                                                    </li>
-                                        
-                                                                </ul>
-                                        
-                                                                <div class="reset">
-                                                                    <p>reset <i class="fas fa-redo-alt"></i></p>
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-3" type="checkbox"
+                                                                                value="Ovo-lacto Vegetarian">
+                                                                            <label for="styled-checkbox-3">Ovo-lacto
+                                                                                Vegetarian</label>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-4" type="checkbox"
+                                                                                value="Vegan">
+                                                                            <label for="styled-checkbox-4">Vegan</label>
+                                                                        </li>
+
+                                                                    </ul>
+
+                                                                    <div class="reset">
+                                                                        <p>reset <i class="fas fa-redo-alt"></i></p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="diet_type">
-                                            <div class="diet_type_heading">
-                                                <div class="card-body">
-                                                    <div class="d-flex gap-2 flex-wrap mb-3">
-                                                        <a class="" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="true"
-                                                            aria-controls="collapseExample1">
-                                                            Meal <i class="fas fa-chevron-down"></i>
-                                                        </a>
-                                                    </div>
-                                                    <div class="collapse show" id="collapseExample1">
-                                                        <div class="card border shadow-none card-body text-muted mb-0">
-                                                            <div class="diet_type_list">
-                                                                <ul class="unstyled centered">
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="Gluten free">
-                                                                        <label for="styled-checkbox-5">Gluten free</label>
-                                                                    </li>
-                                        
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-6" type="checkbox" value="Diabetic friendly">
-                                                                        <label for="styled-checkbox-6">Diabetic friendly</label>
-                                                                    </li>
-                                        
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-7" type="checkbox" value="Loctose free">
-                                                                        <label for="styled-checkbox-7">Loctose free</label>
-                                                                    </li>
-                                        
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-8" type="checkbox" value="Jain food">
-                                                                        <label for="styled-checkbox-8">Jain food</label>
-                                                                    </li>
+                                            <div class="diet_type">
+                                                <div class="diet_type_heading">
+                                                    <div class="card-body">
+                                                        <div class="d-flex gap-2 flex-wrap mb-3">
+                                                            <a class="" data-bs-toggle="collapse"
+                                                                data-bs-target="#collapseExample1" aria-expanded="true"
+                                                                aria-controls="collapseExample1">
+                                                                Meal <i class="fas fa-chevron-down"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="collapse show" id="collapseExample1">
+                                                            <div
+                                                                class="card border shadow-none card-body text-muted mb-0">
+                                                                <div class="diet_type_list">
+                                                                    <ul class="unstyled centered">
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-5" type="checkbox"
+                                                                                value="Gluten free">
+                                                                            <label for="styled-checkbox-5">Gluten
+                                                                                free</label>
+                                                                        </li>
 
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-9" type="checkbox" value="Pre-workout">
-                                                                        <label for="styled-checkbox-9">Pre-workout</label>
-                                                                    </li>
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-6" type="checkbox"
+                                                                                value="Diabetic friendly">
+                                                                            <label for="styled-checkbox-6">Diabetic
+                                                                                friendly</label>
+                                                                        </li>
 
-                                                                    <li>
-                                                                        <input class="styled-checkbox" id="styled-checkbox-10" type="checkbox" value="Post-workout">
-                                                                        <label for="styled-checkbox-10">Post-workout</label>
-                                                                    </li>
-                                        
-                                                                </ul>
-                                        
-                                                                <div class="reset">
-                                                                    <p>reset <i class="fas fa-redo-alt"></i></p>
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-7" type="checkbox"
+                                                                                value="Loctose free">
+                                                                            <label for="styled-checkbox-7">Loctose
+                                                                                free</label>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-8" type="checkbox"
+                                                                                value="Jain food">
+                                                                            <label for="styled-checkbox-8">Jain
+                                                                                food</label>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-9" type="checkbox"
+                                                                                value="Pre-workout">
+                                                                            <label
+                                                                                for="styled-checkbox-9">Pre-workout</label>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <input class="styled-checkbox"
+                                                                                id="styled-checkbox-10" type="checkbox"
+                                                                                value="Post-workout">
+                                                                            <label
+                                                                                for="styled-checkbox-10">Post-workout</label>
+                                                                        </li>
+
+                                                                    </ul>
+
+                                                                    <div class="reset">
+                                                                        <p>reset <i class="fas fa-redo-alt"></i></p>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <div class="cooking_time">
+                                            <div class="cooking_time">
 
-                                            <div class="cooking-heading">
-                                                <h4>Cooking time</h4>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <div id="slider-range"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="row slider-labels">
-                                                    <div class="col-md-6 caption">
-                                                        <div class="time_incre">
-                                                        <span class="data_border" id="slider-range-value1"></span> <span>mins</span>
-                                                    </div>
-                                                    </div>
-                                                    <div class="col-md-6  caption">
-                                                        <div class="time_incre">
-                                                            <span class="data_border" id="slider-range-value2"></span> <span>mins</span>
-                                                        </div>
+                                                <div class="cooking-heading">
+                                                    <h4>Cooking time</h4>
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div id="slider-range"></div>
                                                         </div>
                                                     </div>
-                                              
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <form>
-                                                            <input type="hidden" name="min-value" value="">
-                                                            <input type="hidden" name="max-value" value="">
-                                                        </form>
+                                                    <div class="row slider-labels">
+                                                        <div class="col-md-6 caption">
+                                                            <div class="time_incre">
+                                                                <span class="data_border"
+                                                                    id="slider-range-value1"></span> <span>mins</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6  caption">
+                                                            <div class="time_incre">
+                                                                <span class="data_border"
+                                                                    id="slider-range-value2"></span> <span>mins</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <form>
+                                                                <input type="hidden" name="min-value" value="">
+                                                                <input type="hidden" name="max-value" value="">
+                                                            </form>
+                                                        </div>
                                                     </div>
                                                 </div>
+
+
+
+
+                                                <div class="cooking-heading ingrediants">
+                                                    <h4>Number of Ingrediants</h4>
+
+                                                    <div class="ingrediants_slider">
+                                                        <range-slider min="0" max="100" step="1" dir="rtl">
+                                                        </range-slider>
+                                                    </div>
+
                                                 </div>
-                                          
-                                            
 
 
-                                            <div class="cooking-heading ingrediants">
-                                                <h4>Number of Ingrediants</h4>
-
-                                                <div class="ingrediants_slider">
-                                                <range-slider min="0" max="100" step="1" dir="rtl" ></range-slider>
-                                               </div>
 
                                             </div>
 
 
-
                                         </div>
+
 
 
                                     </div>
 
 
 
-                                </div>
-                            
-                            
-                            
-                                <div class="col-md-9">
-                                    <div class="recommended-content text-muted mt-4 mt-md-0">
-                                       
-                                        <div class="row">
-                                            <div class="col-md-5 col-sm-6 mb-4">
-                                                <div class="recommended-progress-section">
-                                                    <div class="recommended-progress-bar">
-                                                        <p>Carbs</p>
-                                                        <div class="progress-wrap progress" data-progress-percent="100">
-                                                            <div class="progress-bar progress"></div>
+                                    <div class="col-md-9">
+                                        <div class="recommended-content text-muted mt-4 mt-md-0">
+
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-6 mb-4">
+                                                    <div class="recommended-progress-section">
+                                                        <div class="recommended-progress-bar">
+                                                            <p>Carbs</p>
+                                                            <div class="progress-wrap progress"
+                                                                data-progress-percent="100">
+                                                                <div class="progress-bar progress"></div>
+                                                            </div>
+                                                            <span>85.5 gms</span>
                                                         </div>
-                                                        <span>85.5 gms</span>
+
+                                                        <div class="recommended-progress-bar">
+                                                            <p>PUFA</p>
+                                                            <div class="progress-wrap progress pro-2"
+                                                                data-progress-percent="100">
+                                                                <div class="progress-bar progress"></div>
+                                                            </div>
+                                                            <span>30.5 gms</span>
+                                                        </div>
+
+                                                        <div class="recommended-progress-bar">
+                                                            <p>Saturated fats</p>
+                                                            <div class="progress-wrap progress pro-3"
+                                                                data-progress-percent="100">
+                                                                <div class="progress-bar progress"></div>
+                                                            </div>
+                                                            <span class="fats">30.5 gms</span>
+                                                        </div>
                                                     </div>
-                                                
-                                                    <div class="recommended-progress-bar">
-                                                        <p>PUFA</p>
-                                                        <div class="progress-wrap progress pro-2" data-progress-percent="100">
-                                                            <div class="progress-bar progress"></div>
+
+                                                </div>
+
+
+                                                <div class="col-md-5 col-sm-6 mb-4">
+                                                    <div class="recommended-progress-section">
+                                                        <div class="recommended-progress-bar">
+                                                            <p>Proteins</p>
+                                                            <div class="progress-wrap progress pro-4"
+                                                                data-progress-percent="100">
+                                                                <div class="progress-bar progress"></div>
+                                                            </div>
+                                                            <span>85.5 gms</span>
                                                         </div>
-                                                        <span>30.5 gms</span>
-                                                    </div>
-                                                
-                                                    <div class="recommended-progress-bar">
-                                                        <p>Saturated fats</p>
-                                                        <div class="progress-wrap progress pro-3" data-progress-percent="100">
-                                                            <div class="progress-bar progress"></div>
+
+                                                        <div class="recommended-progress-bar">
+                                                            <p>MUFA</p>
+                                                            <div class="progress-wrap progress pro-5"
+                                                                data-progress-percent="100">
+                                                                <div class="progress-bar progress"></div>
+                                                            </div>
+                                                            <span>30.5 gms</span>
                                                         </div>
-                                                        <span class="fats">30.5 gms</span>
                                                     </div>
                                                 </div>
 
+                                                <div class="col-md-2 col-sm-6 mb-4">
+                                                    <div class="recommended-progress-btn">
+                                                        <button class="ptn-dar">Add</button>
+                                                    </div>
+                                                </div>
                                             </div>
 
 
-                                            <div class="col-md-5 col-sm-6 mb-4">
-                                                <div class="recommended-progress-section">
-                                                    <div class="recommended-progress-bar">
-                                                        <p>Proteins</p>
-                                                        <div class="progress-wrap progress pro-4" data-progress-percent="100">
-                                                            <div class="progress-bar progress"></div>
+                                            <div class="row">
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-1.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);" data-bs-toggle="modal"
+                                                                        data-bs-target="#fav_prod">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
                                                         </div>
-                                                        <span>85.5 gms</span>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
                                                     </div>
-                                            
-                                                    <div class="recommended-progress-bar">
-                                                        <p>MUFA</p>
-                                                        <div class="progress-wrap progress pro-5" data-progress-percent="100">
-                                                            <div class="progress-bar progress"></div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
                                                         </div>
-                                                        <span>30.5 gms</span>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fab-3.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4 mb-3">
+                                                    <div class="favourite-cart">
+                                                        <img src="assets/images/fav-2.png">
+                                                        <div class="fav-cart-heading">
+                                                            <div class="fav-heading">
+                                                                <h4><a href="javascript:void(0);">Oats idli and
+                                                                        Sambar</a></h4>
+                                                                <p>360 Kcal</p>
+                                                            </div>
+                                                            <div class="fav-iocn">
+                                                                <p><a href="javascript:void(0);"><i
+                                                                            class="far fa-dot-circle"></i></a></p>
+                                                                <p class="mb-0"><a href="javascript:void(0);"><i
+                                                                            class="fas fa-heart"></i></a></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="add-plus-btn">
+                                                            <button class="add-btn">Add <i
+                                                                    class="fas fa-plus"></i></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-12">
+                                                    <div class="favourites_pag">
+                                                        <ul class="pagination pagination-rounded mt-4 pb-1">
+                                                            <li class="page-item disabled">
+                                                                <a href="javascript: void(0);" class="page-link"><i
+                                                                        class="mdi mdi-chevron-left"></i></a>
+                                                            </li>
+                                                            <li class="page-item active">
+                                                                <a href="javascript: void(0);" class="page-link">1</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a href="javascript: void(0);" class="page-link">2</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a href="javascript: void(0);" class="page-link">3</a>
+                                                            </li>
+                                                            <li class="page-item">
+                                                                <a href="javascript: void(0);" class="page-link"><i
+                                                                        class="mdi mdi-chevron-right"></i></a>
+                                                            </li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="col-md-2 col-sm-6 mb-4">
-                                                <div class="recommended-progress-btn">
-                                                    <button class="ptn-dar">Add</button>
-                                                    </div>
-                                                </div>
+
+
                                         </div>
-
-                                       
-                                        <div class="row">
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-1.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                            <h4><a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#fav_prod">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                         <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fab-3.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                           <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                           <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                           <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                           <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                           <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                           <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 mb-3">
-                                                <div class="favourite-cart">
-                                                    <img src="assets/images/fav-2.png">
-                                                    <div class="fav-cart-heading">
-                                                        <div class="fav-heading">
-                                                         <h4><a href="javascript:void(0);">Oats idli and Sambar</a></h4>
-                                                            <p>360 Kcal</p>
-                                                        </div>
-                                                        <div class="fav-iocn">
-                                                            <p><a href="javascript:void(0);"><i class="far fa-dot-circle"></i></a></p>
-                                                            <p class="mb-0"><a href="javascript:void(0);"><i class="fas fa-heart"></i></a></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="add-plus-btn">
-                                                        <button class="add-btn">Add <i class="fas fa-plus"></i></button>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-12">
-                                                <div class="favourites_pag">
-                                                    <ul class="pagination pagination-rounded mt-4 pb-1">
-                                                        <li class="page-item disabled">
-                                                            <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-left"></i></a>
-                                                        </li>
-                                                        <li class="page-item active">
-                                                            <a href="javascript: void(0);" class="page-link">1</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="javascript: void(0);" class="page-link">2</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="javascript: void(0);" class="page-link">3</a>
-                                                        </li>
-                                                        <li class="page-item">
-                                                            <a href="javascript: void(0);" class="page-link"><i class="mdi mdi-chevron-right"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                   
-
-
                                     </div>
                                 </div>
                             </div>
@@ -735,8 +766,7 @@
             </div>
         </div>
     </div>
-</div>
-<!-- ==========SECTION CODE END============ -->
+    <!-- ==========SECTION CODE END============ -->
 
 
 
@@ -749,407 +779,469 @@
 
 
 
- <footer class="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <script>document.write(new Date().getFullYear())</script> © Nutrition App
-            </div>
-            <div class="col-sm-6">
-                <div class="text-sm-end d-none d-sm-block">
-                    Design & Develop by <a href="https://ascratech.com/" target="_blank"
-                        class="text-decoration-underline">Ascra Technologies</a>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <script>document.write(new Date().getFullYear())</script> © Nutrition App
+                </div>
+                <div class="col-sm-6">
+                    <div class="text-sm-end d-none d-sm-block">
+                        Design & Develop by <a href="https://ascratech.com/" target="_blank"
+                            class="text-decoration-underline">Ascra Technologies</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </footer>
     </div>
-</footer>
-</div>
 
 
-<!-- =========MODEL CODE START=========== -->
-<div class="modal" id="fav_prod">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header favourites_header">
-                <h4 class="modal-title">Breakfast, South India</h4>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <!-- Modal body -->
-            <div class="modal-body favourites_pro_model">
-                <div class="boby_head">
-                    <h3>Oats idli and Sambar <span>(Recommended)</span></h3>
-                    <div class="edit_delet_icon">
-                        <ul>
-                            <li><a href="javascript:void(0);"><i class="fas fa-pen"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fas fa-calendar"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fas fa-trash-alt"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-4">
-                        <div class="like_dislike_img">
-                            <img src="assets/images/like_dis.png">
-                            <div class="like_dislike_box">
-                                  <a href="javascript:void(0);"><img src="assets/images/ei_like.png"></a>
-                                  <a href="javascript:void(0);"><img src="assets/images/dis-like.png"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="indent_table">
-                            <button class="add_icon">Add <i class="fas fa-plus"></i></button>
-                            <table class="table table-borderless">
-                                <tbody>
-                                  <tr>
-                                    <td><img src="assets/images/mod-icon-1.png"></td>
-                                    <td>Total ingrediants</td>
-                                    <td><b>5 items</b></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img src="assets/images/mod-icon-2.png"></td>
-                                    <td>Preparation time</td>
-                                    <td><b>20 minutes</b></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img src="assets/images/mod-icon-3.png"></td>
-                                    <td>Cooking time</td>
-                                    <td><b>10 minutes</b></td>
-                                  </tr>
-                                  <tr>
-                                    <td><img src="assets/images/mod-icon-4.png"></td>
-                                    <td>Allergens</td>
-                                    <td><b>Gluten Starch Nuts</b></td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="nutration_info">
-                            <p>Nutritional info:</p>
-                            <table class="table table-borderless">
-                                <tbody>
-                                    <tr class="text-color-1">
-                                        <td>Calories:</td>
-                                        <td>180 Kcal</td>
-                                    </tr>
-                                    <tr class="text-color-2">
-                                        <td>Carbs:</td>
-                                        <td>20 gms</td>
-                                    </tr>
-                                    <tr class="text-color-3">
-                                        <td>Proteins:</td>
-                                        <td>8.5gms</td>
-                                    </tr>
-                                    <tr class="text-color-4">
-                                        <td>MUFA:</td>
-                                        <td>15 gms</td>
-                                    </tr>
-                                    <tr class="text-color-4">
-                                        <td>PUFA:</td>
-                                        <td>15 gms</td>
-                                    </tr>
-                                    <tr class="text-color-4">
-                                        <td>Saturated fats:</td>
-                                        <td>15 gms</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                    
-                            <div class="view_all">
-                                <button class="full_info">View full Nutritional info</button>
-                            </div>
-                        </div>
-                    </div>
+    <!-- =========MODEL CODE START=========== -->
+    <div class="modal" id="fav_prod">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header favourites_header">
+                    <h4 class="modal-title">Breakfast, South India</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <div class="Ingrediant_list">
-                    <div class="row">
-                        <p><b>Ingrediant list</b></p>
-                        <div class="col-md-6">
-                            <div class="for_oats_table">
-                                <p>For Oats ldli</p>
+                <!-- Modal body -->
+                <div class="modal-body favourites_pro_model">
+                    <div class="boby_head">
+                        <h3>Oats idli and Sambar <span>(Recommended)</span></h3>
+                        <div class="edit_delet_icon">
+                            <ul>
+                                <li><a href="javascript:void(0);"><i class="fas fa-pen"></i></a></li>
+                                <li><a href="javascript:void(0);"><i class="fas fa-calendar"></i></a></li>
+                                <li><a href="javascript:void(0);"><i class="fas fa-trash-alt"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-4">
+                            <div class="like_dislike_img">
+                                <img src="assets/images/like_dis.png">
+                                <div class="like_dislike_box">
+                                    <a href="javascript:void(0);"><img src="assets/images/ei_like.png"></a>
+                                    <a href="javascript:void(0);"><img src="assets/images/dis-like.png"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="indent_table">
+                                <button class="add_icon">Add <i class="fas fa-plus"></i></button>
                                 <table class="table table-borderless">
                                     <tbody>
                                         <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-11" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-11"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="eat">Eat</td>
+                                            <td><img src="assets/images/mod-icon-1.png"></td>
+                                            <td>Total ingrediants</td>
+                                            <td><b>5 items</b></td>
                                         </tr>
-
                                         <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-12" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-12"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="limit">Limit</td>
+                                            <td><img src="assets/images/mod-icon-2.png"></td>
+                                            <td>Preparation time</td>
+                                            <td><b>20 minutes</b></td>
                                         </tr>
-
                                         <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-13" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-13"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="eat">Eat</td>
+                                            <td><img src="assets/images/mod-icon-3.png"></td>
+                                            <td>Cooking time</td>
+                                            <td><b>10 minutes</b></td>
                                         </tr>
-
                                         <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-14" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-14"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="limit">Limit</td>
+                                            <td><img src="assets/images/mod-icon-4.png"></td>
+                                            <td>Allergens</td>
+                                            <td><b>Gluten Starch Nuts</b></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="for_oats_table">
-                                <p>For Sambar</p>
+                        <div class="col-md-4">
+                            <div class="nutration_info">
+                                <p>Nutritional info:</p>
                                 <table class="table table-borderless">
                                     <tbody>
-                                        <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-15" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-15"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="eat">Eat</td>
+                                        <tr class="text-color-1">
+                                            <td>Calories:</td>
+                                            <td>180 Kcal</td>
                                         </tr>
-
-                                        <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-16" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-16"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="limit">Limit</td>
+                                        <tr class="text-color-2">
+                                            <td>Carbs:</td>
+                                            <td>20 gms</td>
                                         </tr>
-
-                                        <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-17" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-17"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="eat">Eat</td>
+                                        <tr class="text-color-3">
+                                            <td>Proteins:</td>
+                                            <td>8.5gms</td>
                                         </tr>
-
-                                        <tr>
-                                            <td style="width: 50px;"> <input class="styled-checkbox" id="styled-checkbox-18" type="checkbox" value="&nbsp">
-                                                <label for="styled-checkbox-18"></label>
-                                            </td>
-                                            <td>Oats</td>
-                                            <td>1 Cup</td>
-                                            <td class="limit">Limit</td>
+                                        <tr class="text-color-4">
+                                            <td>MUFA:</td>
+                                            <td>15 gms</td>
+                                        </tr>
+                                        <tr class="text-color-4">
+                                            <td>PUFA:</td>
+                                            <td>15 gms</td>
+                                        </tr>
+                                        <tr class="text-color-4">
+                                            <td>Saturated fats:</td>
+                                            <td>15 gms</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                        </div>
-                
-                    </div>
-                </div>
 
-
-
-                <div class="Ingrediant_list recipe_list">
-                    <div class="row">
-                        <p><b>Recipe</b></p>
-                        <ol>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem nemo et laboriosam.
-                                Tempora magni ad fugit nam, ullam quia eum similique, possimus commodi mollitia, dignissimos harum esse?
-                            </li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem nemo et laboriosam.
-                                Tempora magni ad fugit nam,</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem nemo et laboriosam.
-                                Tempora magni ad fugit nam,</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem nemo et laboriosam.
-                                Tempora magni ad fugit nam,</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem nemo et laboriosam.
-                                Tempora magni ad fugit nam,</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem nemo et laboriosam.
-                                Tempora magni ad fugit nam,</li>
-                        </ol>
-                        <div class="graph_table_data">
-                        
-                            <div class="row">
-                            <div class="col-md-7 mb-4">
-                                <div class="man_graph">
-                                    <h3>Macronutrients Distribution</h3>
+                                <div class="view_all">
+                                    <button class="full_info">View full Nutritional info</button>
                                 </div>
-                            </div>
-                            <div class="col-md-5 mb-4">
-                                <div class="graph_table_data">
-                                    <table class="table">
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <th>Micronutrients</th>
-                                                <th>Quantity</th>
-                                                <th>%</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Vit D</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Vit E</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Phosporous</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Magnesium</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Iron</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="micronutrients_heading">
-                                <h3>Micronutrients Distribution</h3>
-                            </div>
-                        
-                            <div class="row">
-                            <div class="col-md-6 mt-3">
-                                <div class="graph_table_data">
-                                    <table class="table">
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <th>Micronutrients</th>
-                                                <th>Quantity</th>
-                                                <th>%</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Vit D</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Vit E</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Phosporous</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Magnesium</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Iron</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 mt-3">
-                                <div class="graph_table_data">
-                                    <table class="table">
-                                        <thead class="thead-light">
-                                            <tr>
-                                                <th>Micronutrients</th>
-                                                <th>Quantity</th>
-                                                <th>%</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Vit D</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Vit E</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Phosporous</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Magnesium</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Iron</td>
-                                                <td>0.10mg</td>
-                                                <td>1.7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                            <div class="print_share">
-                                <ul>
-                                    <li><a href="javascript:void(main)"><img src="assets/images/print.png"></a></li>
-                                    <li><a href="javascript:void(main)"><img src="assets/images/share.png"></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
+
+                    <div class="Ingrediant_list">
+                        <div class="row">
+                            <p><b>Ingrediant list</b></p>
+                            <div class="col-md-6">
+                                <div class="for_oats_table">
+                                    <p>For Oats ldli</p>
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-11" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-11"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="eat">Eat</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-12" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-12"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="limit">Limit</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-13" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-13"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="eat">Eat</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-14" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-14"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="limit">Limit</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="for_oats_table">
+                                    <p>For Sambar</p>
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-15" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-15"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="eat">Eat</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-16" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-16"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="limit">Limit</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-17" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-17"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="eat">Eat</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td style="width: 50px;"> <input class="styled-checkbox"
+                                                        id="styled-checkbox-18" type="checkbox" value="&nbsp">
+                                                    <label for="styled-checkbox-18"></label>
+                                                </td>
+                                                <td>Oats</td>
+                                                <td>1 Cup</td>
+                                                <td class="limit">Limit</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="Ingrediant_list recipe_list">
+                        <div class="row">
+                            <p><b>Recipe</b></p>
+                            <ol>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem
+                                    nemo et laboriosam.
+                                    Tempora magni ad fugit nam, ullam quia eum similique, possimus commodi mollitia,
+                                    dignissimos harum esse?
+                                </li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem
+                                    nemo et laboriosam.
+                                    Tempora magni ad fugit nam,</li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem
+                                    nemo et laboriosam.
+                                    Tempora magni ad fugit nam,</li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem
+                                    nemo et laboriosam.
+                                    Tempora magni ad fugit nam,</li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem
+                                    nemo et laboriosam.
+                                    Tempora magni ad fugit nam,</li>
+                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa veniam tempora quidem
+                                    nemo et laboriosam.
+                                    Tempora magni ad fugit nam,</li>
+                            </ol>
+                            <div class="graph_table_data">
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <div class="man_graph macronutrients_distribution_meal_graph">
+                                            <h3>Macronutrients Distribution</h3>
+
+                                            <div class="graph_data">
+                                                <div id="chart_new1">
+                                                </div>
+                                                <div class="daily_cal_sec_mar">
+                                                    <p>Daily caloreis</p>
+                                                    <h3>1670</h3>
+                                                    <p>Kcal/day</p>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <div class="graph_table_data">
+                                            <table class="table">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th>Micronutrients</th>
+                                                        <th>Quantity</th>
+                                                        <th>%</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Vit D</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vit E</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phosporous</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Magnesium</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Iron</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="micronutrients_heading">
+                                    <h3>Micronutrients Distribution</h3>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="graph_table_data">
+                                            <table class="table">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th>Micronutrients</th>
+                                                        <th>Quantity</th>
+                                                        <th>%</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Vit D</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vit E</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phosporous</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Magnesium</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Iron</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mt-3">
+                                        <div class="graph_table_data">
+                                            <table class="table">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th>Micronutrients</th>
+                                                        <th>Quantity</th>
+                                                        <th>%</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Vit D</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Vit E</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phosporous</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Magnesium</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Iron</td>
+                                                        <td>0.10mg</td>
+                                                        <td>1.7</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="print_share">
+                                    <ul>
+                                        <li><a href="javascript:void(main)"><img src="assets/images/print.png"></a></li>
+                                        <li><a href="javascript:void(main)"><img src="assets/images/share.png"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
-
-
-
             </div>
         </div>
     </div>
-</div>
-  <!-- =========MODEL CODE END=========== -->
+    <!-- =========MODEL CODE END=========== -->
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/metisMenu.min.js"></script>
-  <script src="assets/js/simplebar.min.js"></script>
-  <script src="assets/js/waves.min.js"></script>
-  <script src="assets/js/feather.min.js"></script>
-  <script src="assets/js/pace.min.js"></script>
-  <script src="assets/js/range-slider.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/custom.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/simplebar.min.js"></script>
+    <script src="assets/js/waves.min.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/pace.min.js"></script>
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        // =============NEW PIE CHART CODE START==============
+      var options = {
+        series: [44, 55, 25, 17, 15],
+        colors: ['#ffd2b6', '#afffc1', '#cfb8ff', '#f87f9c','#fbde76'],
+        labels: ['Percent'],
+        chart: {
+        type: 'donut',
+      },
+      responsive: [{
+        breakpoint: 480,
+        options: {
+          chart: {
+            width: 200
+          },
+          
+        
+          legend: {
+            position: 'bottom'
+          }
+        }
+      }]
+          };
+    
+    
+     
+    
+      var chart = new ApexCharts(document.querySelector("#chart_new1"), options);
+      chart.render();
+    
+      // =============NEW PIE CHART CODE END==============
+    </script>
+
 
 </body>
+
 </html>

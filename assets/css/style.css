@@ -6831,10 +6831,10 @@ body[data-layout-mode=dark] .timeline .timeline-launch .timeline-box::after {
   font-weight: 400;
 }
 
-.personal-information .form-group i {
+.personal-information .form-group .icon i {
   position: absolute;
-  right: 29px;
-  margin: -29px 0px;
+  right: 30px;
+  margin: 12px 0px;
   color: #cccccc;
   font-size: 17px;
 }
@@ -6961,10 +6961,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   margin-right: 0;
 }
 
-.Life-information .form-group i {
+.Life-information .form-group .icon i {
   position: absolute;
   right: 29px;
-  margin: -29px 0px;
+  margin: 12px 0px;
   color: #cccccc;
   font-size: 17px;
 }
@@ -7083,6 +7083,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding: 20px 25px;
 }
 
+.physical-measure .weight.kg .icon i {
+  margin: 13px 0px;
+}
+
+.weig-field .icon i {
+  margin: 13px 0px;
+}
+
 .weig-field i {
   position: absolute;
   right: 20px;
@@ -7105,7 +7113,7 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .physical-measure .weight.kg i {
   position: absolute;
-  right: 12px;
+  right: 30px;
   margin: -27px 0px;
   color: silver;
 }
@@ -7141,6 +7149,8 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .modal-footer.physical-model-footer button.btn.btn-dark {
   padding: 7px 45px;
   font-size: 13px;
+  background: #1E7FCC;
+  border: 1px solid #1E7FCC;
 }
 
 .progress-measurements h3 {
@@ -7582,9 +7592,9 @@ tr.dieses td img {
 
 .button-recipes button.btn.btn-dark {
   padding: 12px 15px;
-  background: #000000;
+  background: #1E7FCC;
   font-size: 14px;
-  border-color: #000000;
+  border-color: #1E7FCC;
 }
 
 .recipes-back p {
@@ -7767,6 +7777,10 @@ tr.dieses td img {
   justify-content: space-between;
   position: relative;
   margin-bottom: 30px !important;
+}
+
+.progress-bar.color-1:before {
+  border: 2px solid #fcb88e;
 }
 
 .recommended-progress-bar p {
@@ -8353,12 +8367,15 @@ range-slider.touch-active .thumb-wrapper .thumb {
 .toggle_btn {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 220px;
+  width: 265px;
+}
+
+.workout_togglae {
+  display: flex;
 }
 
 .workout_togglae p {
-  margin: 0px;
+  margin: 0px 18px 0px 0px;
   font-size: 14px;
   color: #1c84ee;
   font-weight: 300;
@@ -8394,10 +8411,9 @@ range-slider.touch-active .thumb-wrapper .thumb {
 
 .set_distribution {
   width: 64%;
-  margin-left: 9%;
+  margin: 0px auto;
   border-radius: 5px;
   padding: 27px;
-  box-shadow: 0px 0px 4px 0px #989898;
 }
 
 .set_distr_heading {
@@ -8731,8 +8747,49 @@ a.canvasjs-chart-credit {
   font-size: 21px;
 }
 
+th.rest_day {
+  background: #e4e4e4;
+}
+
+th.rest_day .week_header p {
+  color: #000000 !important;
+}
+
+.breakfast_heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.break p {
+  margin: 0px;
+}
+
+td.active_breakfast {
+  background: #ffe5e5 !important;
+}
+
+td.active_lunch {
+  background: #f8ecbe !important;
+}
+
+td.active_Snacks {
+  background: #d6e8dc !important;
+}
+
+td.active_Pre-workour {
+  background: #ffeefa !important;
+}
+
+td.active_Post-workout {
+  background: #f7f7fe !important;
+}
+
+td.active_Dinner {
+  background: #b5e2e2 !important;
+}
+
 .week-table table.table.table-bordered td {
-  background: #f0f0f0;
+  background: #fafafa;
   border: 1px solid white;
 }
 
@@ -8862,12 +8919,29 @@ tr.Post-workout td {
   border-radius: 5px;
 }
 
+._graph {
+  background: #afffc1 !important;
+}
+
 .recommended_btn button.btn_remo {
-  margin: 20px 0px;
-  background: #381d70;
+  margin: 20px 115px 20px 0px;
+  background: #8BC63E;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   border: none;
   color: white;
+  padding: 12px 70px;
+  font-size: 17px;
+}
+
+.recommended_btn a.btn_remo {
+  margin: 20px 115px 20px 0px;
+  background: #8BC63E;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
   padding: 12px 70px;
   font-size: 17px;
 }
@@ -9327,6 +9401,68 @@ tr.Post-workout td {
 
 /* -------ACCORDIAN CODE END--------- */
 /* ===============meal-plan-recommended PAGE CODE END==================== */
+.switch input {
+  display: none;
+}
+
+.switch {
+  display: inline-block;
+  width: 65px;
+  height: 26px;
+  margin: 0px;
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  background: rgba(33, 150, 243, 0.16);
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #2196F3;
+  border-radius: 30px;
+  transform: translateX(-30px);
+  /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px);
+  /*translateX(w-h)*/
+  background-color: #2196F3;
+}
+
+input:checked + .slider {
+  box-shadow: 0 0 0 2px #2196f3, 0 0 8px #2196f3;
+}
+
+.switch200 .slider:before {
+  width: 200%;
+  transform: translateX(-82px);
+  /*translateX(-(w-h))*/
+}
+
+.switch200 input:checked + .slider:before {
+  background-color: red;
+}
+
+.switch200 input:checked + .slider {
+  box-shadow: 0 0 0 2px red, 0 0 8px red;
+}
+
 .favourites_header {
   border-bottom: 0px;
 }
@@ -9522,6 +9658,495 @@ tr.Post-workout td {
 .favourites_pro_model .recipe_list .graph_table_data .row .graph_table_data table.table td {
   font-size: 14px;
   color: #000000;
+}
+
+#week_model .modal-content {
+  border-radius: 10px;
+  padding: 15px;
+}
+#week_model .modal-content .print_share {
+  text-align: right;
+  margin-top: 20px;
+}
+#week_model .modal-content .print_share ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+#week_model .modal-content .print_share ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+#week_model .modal-content .date_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#week_model .modal-content .date_logo .logo img {
+  width: 190px;
+}
+#week_model .modal-content .date_logo .creation p {
+  margin: 0px;
+  font-size: 14px;
+}
+#week_model .modal-content .modal-header h4.modal-title {
+  font-size: 28px;
+  text-transform: uppercase;
+}
+#week_model .modal-content .brk_bg {
+  background: #ffb0b0;
+}
+#week_model .modal-content .lunch_bg {
+  background: #fbde76;
+}
+#week_model .modal-content .lunch_bg .bkr_option {
+  background: #f6eabc !important;
+}
+#week_model .modal-content .lunch_bg {
+  background: #fbde76;
+}
+#week_model .modal-content .lunch_bg .bkr_option {
+  background: #f6eabc !important;
+}
+#week_model .modal-content .snacks_bg {
+  background: #57a973;
+}
+#week_model .modal-content .snacks_bg .bkr_option {
+  background: #bfe0ca !important;
+}
+#week_model .modal-content .snacks_bg {
+  background: #57a973;
+}
+#week_model .modal-content .snacks_bg .bkr_option {
+  background: #bfe0ca !important;
+}
+#week_model .modal-content .dinner_bg {
+  background: #73bbbb;
+}
+#week_model .modal-content .dinner_bg .bkr_option {
+  background: #99c0c0 !important;
+}
+#week_model .modal-content .dinner_bg {
+  background: #73bbbb;
+}
+#week_model .modal-content .dinner_bg .bkr_option {
+  background: #99c0c0 !important;
+}
+#week_model .modal-content .pre_work_bg {
+  background: #f0b3df;
+}
+#week_model .modal-content .pre_work_bg .bkr_option {
+  background: #f6e0f0 !important;
+}
+#week_model .modal-content .pre_work_bg {
+  background: #f0b3df;
+}
+#week_model .modal-content .pre_work_bg .bkr_option {
+  background: #f6e0f0 !important;
+}
+#week_model .modal-content .post_work_bg {
+  background: #dddef9;
+}
+#week_model .modal-content .post_work_bg .bkr_option {
+  background: #ebebf2 !important;
+}
+#week_model .modal-content .brakfast {
+  display: flex;
+  align-items: center;
+}
+#week_model .modal-content .brakfast .brk_heading {
+  width: 19%;
+  margin: 0px auto;
+}
+#week_model .modal-content .brakfast .brk_heading h3 {
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+}
+#week_model .modal-content .brakfast .bkr_option {
+  width: 79%;
+  background: #ffd3d3;
+}
+#week_model .modal-content .brakfast .bkr_option table.table.table-borderless {
+  margin: 8px 0px;
+}
+#week_model .modal-content .brakfast .bkr_option table.table.table-borderless p {
+  margin: 0px;
+  color: #000000;
+  font-size: 13px;
+}
+#week_model .modal-content .brakfast .bkr_option table.table.table-borderless p span {
+  padding: 0px 10px;
+}
+
+.fitness_plan .fitnessplanner td.active_breakfast {
+  border-left: 6px solid #ffb0b0 !important;
+}
+.fitness_plan .fitnessplanner td.active_Snacks {
+  border-left: 6px solid #57a973 !important;
+}
+.fitness_plan .fitnessplanner td.active_lunch {
+  border-left: 6px solid #fbde76 !important;
+}
+.fitness_plan .fitnessplanner td.active_Dinner {
+  border-left: 6px solid #73bbbb !important;
+}
+.fitness_plan .fitnessplanner td.active_Pre-workour {
+  border-left: 6px solid #f0b3df !important;
+}
+.fitness_plan .fitnessplanner td.active_Post-workout {
+  border-left: 6px solid #dddef9 !important;
+}
+.fitness_plan .fitnessplanner .week-table tr td {
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.fitness_plan .fitnessplanner .week-table tr td p {
+  margin: 14px 0px 0px 0px;
+}
+.fitness_plan .fitnessplanner .week-table tr td img {
+  margin-top: 20px;
+}
+.fitness_plan .fitnessplanner .mealplanner_heading {
+  width: 50%;
+  margin: 45px 0px 25px;
+}
+.fitness_plan .fitnessplanner .mealplanner_heading h3 {
+  font-size: 16px;
+}
+.fitness_plan .fitnessplanner .mealplanner_heading h3 a {
+  color: black;
+  font-size: 18px;
+  padding: 12px;
+}
+.fitness_plan .fitnessplanner .filter-section.overview.MealPlan button {
+  background: #EA3696 !important;
+}
+.fitness_plan div#v-pills-tab {
+  margin-top: 30%;
+}
+.fitness_plan .nutrition_targets .filter-section.overview.MealPlan {
+  margin: 8px 0px 25px 0px !important;
+}
+.fitness_plan .nutrition_targets .filter-section.overview.MealPlan .position-relative {
+  margin-right: 45px;
+}
+.fitness_plan .nutrition_targets .filter-section.overview.MealPlan .question button {
+  background: #57A973;
+  color: white;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.fitness_plan .nutrition_targets .goals {
+  margin-right: 10%;
+}
+.fitness_plan .nutrition_targets .weight_loss h2 {
+  width: 625px;
+  background: rgba(87, 169, 115, 0.2);
+}
+.fitness_plan .nutrition_targets .lifestyle.strength .lifestyle_activity td .edit_act {
+  background: rgba(155, 231, 161, 0.55);
+}
+.fitness_plan .nutrition_targets .lifestyle.intensity .lifestyle_activity td .edit_act {
+  background: rgba(252, 183, 141, 0.7);
+}
+.fitness_plan .nutrition_targets .lifestyle.cardio .lifestyle_activity td .edit_act {
+  background: rgba(251, 222, 118, 0.42);
+}
+.fitness_plan .nutrition_targets .v_f_p {
+  text-align: center;
+  padding: 35px 0px;
+}
+.fitness_plan .nutrition_targets .v_f_p button {
+  background: #57A973;
+  color: white;
+  margin-left: 0px;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+.fitness_plan .nutrition_targets .lifestyle {
+  margin-left: 9%;
+  margin-top: 35px;
+  border-bottom: 2px solid rgba(194, 207, 224, 0.6);
+}
+.fitness_plan .nutrition_targets .lifestyle h3 {
+  font-size: 22px;
+  margin-bottom: 28px;
+}
+.fitness_plan .nutrition_targets .lifestyle .lifestyle_activity td {
+  padding: 0px;
+}
+.fitness_plan .nutrition_targets .lifestyle .lifestyle_activity td p {
+  font-size: 16px;
+  color: #000000;
+  margin: 0px;
+}
+.fitness_plan .nutrition_targets .lifestyle .lifestyle_activity td .edit_act {
+  background: rgba(194, 207, 224, 0.4);
+  text-align: center;
+  width: 205px;
+  padding: 8px 5px;
+  border-radius: 33px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+.fitness_plan .nutrition_targets .lifestyle .lifestyle_activity td .edit_act p {
+  font-size: 14px;
+}
+.fitness_plan .nutrition_targets .lifestyle .lifestyle_activity td .edit_act p a {
+  color: rgba(108, 108, 109, 0.46);
+  margin-left: 9px;
+}
+
+.fitness_planner_section {
+  padding: 20px;
+}
+.fitness_planner_section .cradio_exp {
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.fitness_planner_section .cradio_exp button.end_session {
+  background: #EA3696;
+  border: none;
+  color: white;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 8px 30px;
+}
+.fitness_planner_section .cradio_exp .pre p a {
+  color: #2196F3 !important;
+  font-size: 15px;
+}
+.fitness_planner_section .Warmupexercises_box.Cooldownexercises {
+  background: rgba(204, 238, 207, 0.41);
+  border: 1px solid rgba(144, 223, 152, 0.74);
+}
+.fitness_planner_section .Warmupexercises_box.cardioexercises {
+  background: rgba(221, 222, 249, 0.37);
+  border: 1px solid #BCBFFF;
+}
+.fitness_planner_section .Warmupexercises_box {
+  background: rgba(255, 233, 233, 0.54);
+  border: 1px solid rgba(255, 176, 176, 0.74);
+  border-radius: 10px;
+  padding: 20px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec {
+  margin-top: 25px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item {
+  background-color: white;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 15px;
+  padding: 8px 20px;
+  border-radius: 4px !important;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .accordian_video iframe {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .accordian_video p {
+  margin-top: 17px;
+  margin-bottom: 0px;
+  font-size: 16px;
+  color: #000000;
+  line-height: 30px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .accordion-header {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .confirm_filter {
+  position: absolute;
+  right: 6%;
+  display: flex;
+  width: 205px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .confirm_filter .set_min {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .confirm_filter .set_min .min.set {
+  margin-left: 20px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .confirm_filter .set_min .min {
+  display: flex;
+  align-items: center;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .confirm_filter .set_min .min img {
+  width: 25px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .confirm_filter .set_min .min p {
+  margin: 0px;
+  margin-left: 15px;
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #ffffff00;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.13);
+  box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0.13);
+}
+.fitness_planner_section .Warmupexercises_box .excercises_tab_sec .accordion .accordion-item a.accordion-button {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+.fitness_planner_section .Warmupexercises_box .media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+.fitness_planner_section .Warmupexercises_box .media .media-body {
+  margin-left: 24px;
+}
+.fitness_planner_section .Warmupexercises_box .media .media-body p {
+  margin: 0px;
+  color: #000000;
+  line-height: 24px;
+  font-size: 13px;
+}
+.fitness_planner_section .Warmupexercises_box .cardioexercises table.mb-4 {
+  border-radius: 10px;
+  background: white;
+}
+.fitness_planner_section .Warmupexercises_box .cardioexercises th.desc {
+  width: 65%;
+}
+.fitness_planner_section .Warmupexercises_box .cardioexercises th {
+  font-size: 15px;
+}
+.fitness_planner_section .Warmupexercises_box .cardioexercises td {
+  padding: 25px 24px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+}
+.fitness_planner_section .Warmupexercises_box .cardioexercises td.desc {
+  width: 65%;
+  font-size: 15px;
+  color: black;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min .min {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min .min img {
+  width: 25px;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min .min .text p {
+  margin: 0px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min .min.set {
+  margin-left: 45px;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min .edit_act p {
+  background: rgba(194, 207, 224, 0.4);
+  margin: 0px;
+  padding: 8px 26px;
+  cursor: pointer;
+  border-radius: 45px;
+}
+.fitness_planner_section .Warmupexercises_box .warm_heading .set_min .edit_act p a {
+  color: #6C6C6D !important;
+  font-size: 13px !important;
+  margin-left: 6px;
+}
+.fitness_planner_section a {
+  text-decoration: underline !important;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2196F3;
+}
+.fitness_planner_section a:hover {
+  color: #2196F3;
+}
+.fitness_planner_section .card-body .nav-fill .nav-item .nav-link, .fitness_planner_section .card-body .nav-justified .nav-item .nav-link {
+  width: 85%;
+}
+.fitness_planner_section .card-body a.nav-link.tab_1.active {
+  background: white !important;
+  border: 1px solid rgba(255, 176, 176, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+.fitness_planner_section .card-body ul li a.nav-link.tab_1 {
+  background: #FFE9E9;
+  padding: 20px 25px;
+  border: 1px solid rgba(255, 176, 176, 0.3);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-decoration: none !important;
+}
+.fitness_planner_section .card-body ul li a.nav-link.tab_1 span.d-none.d-sm-block {
+  color: black;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.fitness_planner_section .card-body a.nav-link.tab_2.active {
+  background: white !important;
+  border: 1px solid #BCBFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+.fitness_planner_section .card-body ul li a.nav-link.tab_2 {
+  background: #DDDEF9;
+  padding: 20px 25px;
+  border: 1px solid #BCBFFF;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-decoration: none !important;
+}
+.fitness_planner_section .card-body ul li a.nav-link.tab_2 span.d-none.d-sm-block {
+  color: black;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.fitness_planner_section .card-body a.nav-link.tab_3.active {
+  background: white !important;
+  border: 1px solid #90DF98;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+.fitness_planner_section .card-body ul li a.nav-link.tab_3 {
+  background: #CCEECF;
+  padding: 20px 25px;
+  border: 1px solid #90DF98;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-decoration: none !important;
+}
+.fitness_planner_section .card-body ul li a.nav-link.tab_3 span.d-none.d-sm-block {
+  color: black;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 @media (max-width: 1440.9px) {
