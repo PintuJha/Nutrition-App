@@ -6954,7 +6954,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .personal-information .form-group .col-lg-9.textarea i {
-    top: 45px;
+    top: 0px;
 }
 .Life-information .card1 .card-body h3 {
     font-size: 20px;
@@ -8279,9 +8279,19 @@ range-slider.touch-active .thumb-wrapper .thumb {
 }
 .workout_togglae {
     display: flex;
-    // align-items: center;
+    align-items: center;
 }
-
+.usda_text {
+    color: black;
+    margin-left: 10px;
+}
+.nutrients_img_vita {
+    display: flex;
+    align-items: center;
+    p {
+        margin: 0px 0px 0px 15px;
+    }
+}
 .workout_togglae p {
     margin: 0px 18px 0px 0px;
     font-size: 14px;
@@ -8289,14 +8299,35 @@ range-slider.touch-active .thumb-wrapper .thumb {
     font-weight: 300;
 }
 
+.daily_cal_sec_mar {
+    position: absolute;
+    top: 40%;
+    left: 39%;
+    text-align: center;
+}
+div#v-pills-tabContent .graph_data {
+    position: relative;
+    width: 50%;
+    margin: 0px auto;
+}
+div#v-pills-tabContent .chart_section p {
+    margin: 0px 0px 8px;
+}
 .rest_day p {
     margin: 0px;
     font-size: 15px;
     color: $black;
 }
+
 .chart_section {
     margin: 35px auto;
-    width: 95%;
+    width: 82%;
+}
+.recommended-progress-section .recommended-progress-bar p {
+    width: 50%;
+}
+.table_progress_bar .recommended-progress-bar .progress .progress-bar {
+    left: 0px !important;
 }
 
 .chart_section p {

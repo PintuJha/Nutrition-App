@@ -106,15 +106,7 @@
             "light" == n(this).val() ? (document.body.setAttribute("data-layout-mode", "light"), document.body.setAttribute("data-topbar", "light"), document.body.setAttribute("data-sidebar", "light"), a.hasAttribute("data-layout") && "horizontal" == a.getAttribute("data-layout") || document.body.setAttribute("data-sidebar", "light"), l("topbar-color-light"), l("sidebar-color-light")) : (document.body.setAttribute("data-layout-mode", "dark"), document.body.setAttribute("data-topbar", "dark"), document.body.setAttribute("data-sidebar", "dark"), a.hasAttribute("data-layout") && "horizontal" == a.getAttribute("data-layout") || document.body.setAttribute("data-sidebar", "dark"), l("sidebar-color-dark"))
         }), n("input[name='layout-direction']").on("change", function() {
             "ltr" == n(this).val() ? (document.getElementsByTagName("html")[0].removeAttribute("dir"), document.getElementById("bootstrap-style").setAttribute("href", "assets/css/bootstrap.min.css"), document.getElementById("app-style").setAttribute("href", "assets/css/app.min.css")) : (document.getElementById("bootstrap-style").setAttribute("href", "assets/css/bootstrap-rtl.min.css"), document.getElementById("app-style").setAttribute("href", "assets/css/app-rtl.min.css"), document.getElementsByTagName("html")[0].setAttribute("dir", "rtl"))
-        }), Waves.init(), n("#checkAll").on("change", function() {
-            n(".table-check .form-check-input").prop("checked", n(this).prop("checked"))
-        }), n(".table-check .form-check-input").change(function() {
+        }),  n(".table-check .form-check-input").change(function() {
             n(".table-check .form-check-input:checked").length == n(".table-check .form-check-input").length ? n("#checkAll").prop("checked", !0) : n("#checkAll").prop("checked", !1)
         })
-
-
-
-
-
-
 }(jQuery);

@@ -1,9 +1,13 @@
-
 @media (max-width: 1440.9px) {
+    .daily_cal_sec_mar {
+        position: absolute;
+        top: 38%;
+        left: 36%;
+        text-align: center;
+    }
     .client-details-left {
         width: 100%;
     }
-
     .client-details-left ul li {
         padding-left: 20px;
     }
@@ -16,6 +20,20 @@
 }
 
 @media (max-width: 1366.9px) {
+
+    .card1.overview-section .nav a.nav-link {
+        padding: 13px 12px;
+        font-size: 13px;
+    }
+
+
+    .daily_cal_sec_mar {
+        position: absolute;
+        top: 37%;
+        left: 35%;
+        text-align: center;
+    }
+
     .client-details-left {
         width: 100%;
     }
@@ -32,6 +50,10 @@
 }
 
 @media (max-width: 1280.9px) {
+    .recommended-progress-section .recommended-progress-bar p {
+        width: 50%;
+        font-size: 13px;
+    }
     .client-details-left {
         width: 100%;
     }
@@ -150,5 +172,3 @@
     }
 }
 
-
-// ========AFVESF======

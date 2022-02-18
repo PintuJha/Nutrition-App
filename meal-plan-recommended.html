@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <title>Nutrition App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/plugins/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/plugins/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -61,7 +61,7 @@
                         </form>
                     </div>
                 </div>
-              
+
                 <div class="dropdown d-inline-block notification_box">
                     <button type="button" class="btn header-item noti-icon position-relative me-2"
                         id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -138,7 +138,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <div class="dropdown d-inline-block">
                     <button type="button" class="btn header-item bg-soft-light border-start"
                         id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -264,7 +264,7 @@
 
                                 <div class="recommended_card_box recommended_accordian">
                                     <div class="recommended_card_all recommended_accordian_multi">
-                                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion " id="accordionPanelsStayOpenExample">
                                             <!-- ---------breakfast Start-------- -->
                                             <div class="accordion-item breakfast mb-4">
                                                 <div class="accordion-header" id="panelsStayOpen-headingOne">
@@ -336,7 +336,8 @@
                                                 </div>
                                                 <div id="panelsStayOpen-collapseOne"
                                                     class="accordion-collapse collapse show"
-                                                    aria-labelledby="panelsStayOpen-headingOne">
+                                                    aria-labelledby="panelsStayOpen-headingOne"
+                                                    data-bs-parent="#accordionPanelsStayOpenExample">
                                                     <div class="accordion-body">
                                                         <!-- ========First Option Start========= -->
                                                         <div class="accordion-item custom_accordian_op mb-3">
@@ -1021,7 +1022,8 @@
                                                     </div>
                                                 </div>
                                                 <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                                    aria-labelledby="panelsStayOpen-headingTwo"
+                                                    data-bs-parent="#accordionPanelsStayOpenExample">
                                                     <div class="accordion-body">
                                                         <!-- ========First Option Start========= -->
                                                         <div class="accordion-item custom_accordian_op mb-3">
@@ -1707,7 +1709,8 @@
                                                 </div>
                                                 <div id="panelsStayOpen-collapseThree"
                                                     class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-headingThree">
+                                                    aria-labelledby="panelsStayOpen-headingThree"
+                                                    data-bs-parent="#accordionPanelsStayOpenExample">
                                                     <div class="accordion-body">
                                                         <!-- ========First Option Start========= -->
                                                         <div class="accordion-item custom_accordian_op mb-3">
@@ -2393,7 +2396,8 @@
                                                 </div>
                                                 <div id="panelsStayOpen-collapsefour"
                                                     class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-headingfour">
+                                                    aria-labelledby="panelsStayOpen-headingfour"
+                                                    data-bs-parent="#accordionPanelsStayOpenExample">
                                                     <div class="accordion-body">
                                                         <!-- ========First Option Start========= -->
                                                         <div class="accordion-item custom_accordian_op mb-3">
@@ -3079,7 +3083,8 @@
                                                 </div>
                                                 <div id="panelsStayOpen-collapsefive"
                                                     class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-headingfive">
+                                                    aria-labelledby="panelsStayOpen-headingfive"
+                                                    data-bs-parent="#accordionPanelsStayOpenExample">
                                                     <div class="accordion-body">
                                                         <!-- ========First Option Start========= -->
                                                         <div class="accordion-item custom_accordian_op mb-3">
@@ -3764,7 +3769,8 @@
                                                     </div>
                                                 </div>
                                                 <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse"
-                                                    aria-labelledby="panelsStayOpen-headingsix">
+                                                    aria-labelledby="panelsStayOpen-headingsix"
+                                                    data-bs-parent="#accordionPanelsStayOpenExample">
                                                     <div class="accordion-body">
                                                         <!-- ========First Option Start========= -->
                                                         <div class="accordion-item custom_accordian_op mb-3">
@@ -4519,12 +4525,10 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/metisMenu.min.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
     <script src="assets/js/simplebar.min.js"></script>
-    <script src="assets/js/waves.min.js"></script>
     <script src="assets/js/feather.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="assets/js/pace.min.js"></script>
+    <script src="assets/js/nouislider.js"></script>
     <script src="assets/js/range-slider.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
